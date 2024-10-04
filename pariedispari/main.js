@@ -10,3 +10,6 @@
    - Definire somma pari o dispari;
    - Dichiarare vincitore. 
  */
+
+   let userOddOrEven = prompt("Scegli tra pari o dispari:");
+   let userNumber = Number(prompt("Scegli un numero tra 1 e 5:"));
