@@ -10,8 +10,7 @@ Creare una funzione per capire se la parola inserita è palindroma */
    - if per dare output diversi a seconda del dato (se parola inserita letta da sx a dx = se letta da dx a sx, allora è palindroma);
  */
 
-function isTheWordAPalindrome(){
-    let word = prompt("Inserisci una parola:");
+function isTheWordAPalindrome(word = prompt("Inserisci una parola:")){
     let backwardWord = word.split("").reverse("").join("");
     let palindrom = word === backwardWord;
 
@@ -23,8 +22,10 @@ function isTheWordAPalindrome(){
 
 if (isTheWordAPalindrome()){
     console.log("La parola inserita è un palindromo!");
+    alert("La parola inserita è un palindromo!");
 } else {
     console.log("La parola inserita non è un palindromo!");
+    alert("La parola inserita non è un palindromo!");
 }
 
 

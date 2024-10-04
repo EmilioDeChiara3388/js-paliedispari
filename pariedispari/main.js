@@ -12,4 +12,14 @@
  */
 
    let userOddOrEven = prompt("Scegli tra pari o dispari:");
+   if (userOddOrEven === "pari"){
+    alert("Hai scelto pari!");
+   } else if (userOddOrEven === "dispari"){
+    alert("Hai scelto dispari!");
+   } else {
+    alert("Scelta non valida, scegli tra pari o dispari:")
+   }   console.log(userOddOrEven);
+   
    let userNumber = Number(prompt("Scegli un numero tra 1 e 5:"));
+    console.log(userNumber);
+    
