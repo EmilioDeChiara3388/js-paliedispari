@@ -9,9 +9,6 @@ Creare una funzione per capire se la parola inserita è palindroma */
    - Funzione per stabilire i parametri del dato inserito;
    - if per dare output diversi a seconda del dato (se parola inserita letta da sx a dx = se letta da dx a sx, allora è palindroma);
  */
-  /*  let word = prompt("Inserisci una parola");
-   let backwardWord = word.split("").reverse("").join(""); */
-
 
 function isTheWordAPalindrome(){
     let word = prompt("Inserisci una parola:");
