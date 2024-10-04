@@ -35,42 +35,34 @@
     let sum = userNumber + pcNumber;
     console.log(sum);
 
-    function willSumBeOdd(sum){
-       let OddSum = sum % 2 != 0;
-        console.log("La somma è dispari!");
-        alert("La somma è dispari!");
-       return OddSum;
+    function willSumBeEven(sum){
+        if (sum % 2 == 0){
+            return true;
+        }
+    
+        return false;
     }
 
-    function willSumBeEven(sum){
-        let EvenSum = sum % 2 == 0;
-         console.log("La somma è pari!");
-         alert("La somma è pari!");
-        return EvenSum;
-     }
+    if (willSumBeEven(sum) == true){
+        console.log("La somma è pari!");
+        alert("La somma è pari!");
+    } else {
+        console.log("La somma è dispari!");
+        alert("La somma è dispari!");
+    }
 
-     if (OddSum == true){
-        console.log(OddSum);
-     } else if (EvenSum == true) {
-        console.log(EvenSum);
-     }
-        
-    
-
-
-     /* console.log(willSumBeOdd());
-     console.log(willSumBeEven()); */
-
-     /* function sumOddOrEven (sum){
-        if (sum % 2 == 0){
-            console.log("La somma è pari!");
-            alert("La somma è pari!");
-        } else {
-            console.log("La somma è dispari!");
-            alert("La somma è dispari!");
-        }
-        return true;
-     } */
-     
+    if (willSumBeEven(sum) == true && userOddOrEven === "pari"){
+        console.log("Complimenti, hai vinto!");
+        alert("Complimenti, hai vinto!");
+    } else if (willSumBeEven(sum) == true && userOddOrEven === "dispari"){
+        console.log("Peccato, hai perso!");
+        alert("Peccato, hai perso!");
+    } else if (willSumBeEven(sum) == false && userOddOrEven === "pari"){
+        console.log("Peccato, hai perso!");
+        alert("Peccato, hai perso!");
+    } else if (willSumBeEven(sum) == false && userOddOrEven === "dispari"){
+        console.log("Complimenti, hai vinto!");
+        alert("Complimenti, hai vinto!");
+    }
      
     
